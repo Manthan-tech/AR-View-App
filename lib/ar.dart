@@ -20,6 +20,7 @@ class _HelloWorldState extends State<HelloWorld> {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('In App Ar'),
+          color: Color(Colors.red)
         ),
         body: ArCoreView(
           onArCoreViewCreated: _onArCoreViewCreated,
