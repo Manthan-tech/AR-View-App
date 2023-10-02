@@ -22,17 +22,17 @@ class _mainPageState extends State<mainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff4f6fd),
+      backgroundColor: Color(0xfff466fd),
       body: Container(
-        padding: EdgeInsets.only(top: 40, left: 30, right: 30),
+        padding: EdgeInsets.only(top: 39, left: 29, right: 29),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text("Hello Examiners", style: TextStyle(
-                  fontSize: 20,
+                Text("Hello fest people", style: TextStyle(
+                  fontSize: 21,
                   color: Colors.blueAccent
                 ),),
                          ],
@@ -57,13 +57,13 @@ class _mainPageState extends State<mainPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           courseWidget('In App AR', 'Shape objects', 'assets/image/color-shadowsweb1.jpg', Color(0xffff6a65), Color(0xffff5954), 'https://modelviewer.dev/shared-assets/models/Astronaut.glb', true),
-                          SizedBox(height: 20,),
+                          SizedBox(height: 19,),
                           courseWidget('Google AR', '3D Shish Kabab', 'assets/image/kabab.jpeg', Color(0xffe9eefa), Colors.white, 'https://tempcssmanthan.s3.us-east-2.amazonaws.com/shishkebab.glb', false),
-                          SizedBox(height: 20,),
+                          SizedBox(height: 19,),
                           courseWidget('Google AR', 'PBR Sphere', 'assets/image/balls.jpeg', Color(0xffe9eefa), Colors.white, 'https://tempcssmanthan.s3.us-east-2.amazonaws.com/pbr-spheres.glb', false),
-                          SizedBox(height: 20,),
+                          SizedBox(height: 19,),
                           courseWidget('Google AR', 'Alpha Blend Litmus', 'assets/image/alpha.jpeg', Color(0xffe9eefa), Colors.white, 'https://tempcssmanthan.s3.us-east-2.amazonaws.com/alpha-blend-litmus.glb', false),
-                          SizedBox(height: 20,),
+                          SizedBox(height: 19,),
                           courseWidget('Google AR', 'Robot Expressive', 'assets/image/robo.jpeg', Color(0xffe9eefa), Colors.white, 'https://tempcssmanthan.s3.us-east-2.amazonaws.com/RobotExpressive.glb', false),
                         ],
                       ),
@@ -147,7 +147,7 @@ class _mainPageState extends State<mainPage> {
             Hero(
               tag: '$img',
               child: Container(
-                height: 80,
+                height: 70,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('$img'),
